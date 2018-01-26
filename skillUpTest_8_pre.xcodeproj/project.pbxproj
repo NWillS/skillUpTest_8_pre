@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		54B4F2233D7C1ED8F684E59B /* Pods_skillUpTest_8_preTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8120A00739A9BCB4CEA8BE8 /* Pods_skillUpTest_8_preTests.framework */; };
 		B47F3DE7822991A8E79935A5 /* Pods_skillUpTest_8_pre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE90FE0BF57194F15436450 /* Pods_skillUpTest_8_pre.framework */; };
+		BE093C32201AF626002DCE7F /* String+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C30201AF626002DCE7F /* String+DateFormat.swift */; };
+		BE093C33201AF626002DCE7F /* Date+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C31201AF626002DCE7F /* Date+DateFormat.swift */; };
+		BE093C36201AF809002DCE7F /* MocRealmMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C35201AF809002DCE7F /* MocRealmMessage.swift */; };
+		BE093C39201AF88D002DCE7F /* TaskDaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C38201AF88D002DCE7F /* TaskDaoTests.swift */; };
 		BE352AB9201841F40058DD1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE352AB8201841F40058DD1E /* AppDelegate.swift */; };
 		BE352AC0201841F40058DD1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE352ABF201841F40058DD1E /* Assets.xcassets */; };
 		BE352AC3201841F40058DD1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE352AC1201841F40058DD1E /* LaunchScreen.storyboard */; };
-		BE352ADD201845380058DD1E /* RealmDaoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE352ADC201845380058DD1E /* RealmDaoHelper.swift */; };
 		BE352AE02018463A0058DD1E /* MessageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE352ADF2018463A0058DD1E /* MessageDto.swift */; };
 		BE352AE3201847FA0058DD1E /* MessageDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE352AE2201847FA0058DD1E /* MessageDao.swift */; };
 		BE352AE5201849A10058DD1E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BE352AE4201849A10058DD1E /* .swiftlint.yml */; };
+		BE84BC2C20196DAF00D65729 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE84BC2B20196DAF00D65729 /* MessageTableViewCell.swift */; };
+		BE84BC2E20196E6200D65729 /* MessageTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE84BC2D20196E6200D65729 /* MessageTableViewProvider.swift */; };
+		BE84BC31201974C400D65729 /* MessageList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE84BC30201974C400D65729 /* MessageList.storyboard */; };
+		BE84BC33201974DD00D65729 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE84BC32201974DD00D65729 /* MessageListViewController.swift */; };
+		BE84BC382019791000D65729 /* RealmDaoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE84BC372019790F00D65729 /* RealmDaoHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +41,10 @@
 		536F2B392344EDC175D68B1B /* Pods-skillUpTest_8_pre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skillUpTest_8_pre.release.xcconfig"; path = "Pods/Target Support Files/Pods-skillUpTest_8_pre/Pods-skillUpTest_8_pre.release.xcconfig"; sourceTree = "<group>"; };
 		6AE90FE0BF57194F15436450 /* Pods_skillUpTest_8_pre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skillUpTest_8_pre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8897AB714B67ACE0553BE8ED /* Pods-skillUpTest_8_preTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skillUpTest_8_preTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-skillUpTest_8_preTests/Pods-skillUpTest_8_preTests.release.xcconfig"; sourceTree = "<group>"; };
+		BE093C30201AF626002DCE7F /* String+DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DateFormat.swift"; sourceTree = "<group>"; };
+		BE093C31201AF626002DCE7F /* Date+DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+DateFormat.swift"; sourceTree = "<group>"; };
+		BE093C35201AF809002DCE7F /* MocRealmMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocRealmMessage.swift; sourceTree = "<group>"; };
+		BE093C38201AF88D002DCE7F /* TaskDaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDaoTests.swift; sourceTree = "<group>"; };
 		BE352AB5201841F40058DD1E /* skillUpTest_8_pre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skillUpTest_8_pre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE352AB8201841F40058DD1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE352ABF201841F40058DD1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,10 +52,14 @@
 		BE352AC4201841F40058DD1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE352AC9201841F40058DD1E /* skillUpTest_8_preTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skillUpTest_8_preTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE352ACF201841F40058DD1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE352ADC201845380058DD1E /* RealmDaoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDaoHelper.swift; sourceTree = "<group>"; };
 		BE352ADF2018463A0058DD1E /* MessageDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDto.swift; sourceTree = "<group>"; };
 		BE352AE2201847FA0058DD1E /* MessageDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDao.swift; sourceTree = "<group>"; };
 		BE352AE4201849A10058DD1E /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		BE84BC2B20196DAF00D65729 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		BE84BC2D20196E6200D65729 /* MessageTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewProvider.swift; sourceTree = "<group>"; };
+		BE84BC30201974C400D65729 /* MessageList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessageList.storyboard; sourceTree = "<group>"; };
+		BE84BC32201974DD00D65729 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		BE84BC372019790F00D65729 /* RealmDaoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDaoHelper.swift; sourceTree = "<group>"; };
 		D785890B597A1FA1FF994115 /* Pods-skillUpTest_8_preTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skillUpTest_8_preTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skillUpTest_8_preTests/Pods-skillUpTest_8_preTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8120A00739A9BCB4CEA8BE8 /* Pods_skillUpTest_8_preTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skillUpTest_8_preTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,15 +93,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE093C2F201AF626002DCE7F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE093C30201AF626002DCE7F /* String+DateFormat.swift */,
+				BE093C31201AF626002DCE7F /* Date+DateFormat.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE093C34201AF7D2002DCE7F /* Moc */ = {
+			isa = PBXGroup;
+			children = (
+				BE093C35201AF809002DCE7F /* MocRealmMessage.swift */,
+			);
+			path = Moc;
+			sourceTree = "<group>";
+		};
+		BE093C37201AF85D002DCE7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE093C38201AF88D002DCE7F /* TaskDaoTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BE352AAC201841F40058DD1E = {
 			isa = PBXGroup;
 			children = (
-				BE352AE4201849A10058DD1E /* .swiftlint.yml */,
 				27D753A7F0661C9A2BC72B04 /* Frameworks */,
 				ED9AF891C37092638D668F71 /* Pods */,
 				BE352AB6201841F40058DD1E /* Products */,
 				BE352AB7201841F40058DD1E /* skillUpTest_8_pre */,
 				BE352ACC201841F40058DD1E /* skillUpTest_8_preTests */,
+				BE352AE4201849A10058DD1E /* .swiftlint.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +142,12 @@
 		BE352AB7201841F40058DD1E /* skillUpTest_8_pre */ = {
 			isa = PBXGroup;
 			children = (
-				BE352ADE201845ED0058DD1E /* Models */,
-				BE352ADB201845380058DD1E /* Helpers */,
+				BE093C2F201AF626002DCE7F /* Extensions */,
 				BE352AD9201843D90058DD1E /* Controllers */,
+				BE352ADB201845380058DD1E /* Helpers */,
+				BE352ADE201845ED0058DD1E /* Models */,
 				BE352AD8201843C50058DD1E /* Others */,
+				BE84BC2A20196D8000D65729 /* Views */,
 			);
 			path = skillUpTest_8_pre;
 			sourceTree = "<group>";
@@ -112,6 +155,8 @@
 		BE352ACC201841F40058DD1E /* skillUpTest_8_preTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE093C37201AF85D002DCE7F /* Models */,
+				BE093C34201AF7D2002DCE7F /* Moc */,
 				BE352ACF201841F40058DD1E /* Info.plist */,
 			);
 			path = skillUpTest_8_preTests;
@@ -130,6 +175,7 @@
 		BE352AD9201843D90058DD1E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BE84BC2F201974AD00D65729 /* MessageList */,
 				BE352ADA201843E30058DD1E /* LaunchScreen */,
 			);
 			path = Controllers;
@@ -146,7 +192,7 @@
 		BE352ADB201845380058DD1E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				BE352ADC201845380058DD1E /* RealmDaoHelper.swift */,
+				BE84BC372019790F00D65729 /* RealmDaoHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -154,10 +200,28 @@
 		BE352ADE201845ED0058DD1E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BE352ADF2018463A0058DD1E /* MessageDto.swift */,
 				BE352AE2201847FA0058DD1E /* MessageDao.swift */,
+				BE352ADF2018463A0058DD1E /* MessageDto.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BE84BC2A20196D8000D65729 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE84BC2B20196DAF00D65729 /* MessageTableViewCell.swift */,
+				BE84BC2D20196E6200D65729 /* MessageTableViewProvider.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE84BC2F201974AD00D65729 /* MessageList */ = {
+			isa = PBXGroup;
+			children = (
+				BE84BC30201974C400D65729 /* MessageList.storyboard */,
+				BE84BC32201974DD00D65729 /* MessageListViewController.swift */,
+			);
+			path = MessageList;
 			sourceTree = "<group>";
 		};
 		ED9AF891C37092638D668F71 /* Pods */ = {
@@ -232,6 +296,7 @@
 					};
 					BE352AC8201841F40058DD1E = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BE352AB4201841F40058DD1E;
 					};
@@ -263,6 +328,7 @@
 			files = (
 				BE352AE5201849A10058DD1E /* .swiftlint.yml in Resources */,
 				BE352AC3201841F40058DD1E /* LaunchScreen.storyboard in Resources */,
+				BE84BC31201974C400D65729 /* MessageList.storyboard in Resources */,
 				BE352AC0201841F40058DD1E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,10 +469,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE84BC33201974DD00D65729 /* MessageListViewController.swift in Sources */,
 				BE352AE3201847FA0058DD1E /* MessageDao.swift in Sources */,
-				BE352ADD201845380058DD1E /* RealmDaoHelper.swift in Sources */,
+				BE84BC2E20196E6200D65729 /* MessageTableViewProvider.swift in Sources */,
+				BE093C32201AF626002DCE7F /* String+DateFormat.swift in Sources */,
 				BE352AB9201841F40058DD1E /* AppDelegate.swift in Sources */,
+				BE84BC2C20196DAF00D65729 /* MessageTableViewCell.swift in Sources */,
 				BE352AE02018463A0058DD1E /* MessageDto.swift in Sources */,
+				BE093C33201AF626002DCE7F /* Date+DateFormat.swift in Sources */,
+				BE84BC382019791000D65729 /* RealmDaoHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +485,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE093C36201AF809002DCE7F /* MocRealmMessage.swift in Sources */,
+				BE093C39201AF88D002DCE7F /* TaskDaoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,11 +656,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = skillUpTest_8_preTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.neec.skillUpTest-8-preTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skillUpTest_8_pre.app/skillUpTest_8_pre";
@@ -600,6 +675,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = skillUpTest_8_preTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

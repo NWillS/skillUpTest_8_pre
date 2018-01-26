@@ -25,8 +25,29 @@ final class MessageDao {
     }
     
 //    メッセージ全取得
-    static func getAllMessages() -> [MessageDto] {
-        let messageList = daoHelper.findAll().sorted(byKeyPath: "updateDate", ascending: false)
-        return messageList.map { MessageDto( value: $0) }
+    static func getAllMessages() -> ( [[MessageDto]], [String]) {
+        let messageList = daoHelper.findAll().sorted(byKeyPath: "updateDate", ascending: true)
+        var result = [[MessageDto]]()
+        var groupList = [String]()
+        
+        for message in messageList {
+            let updateDate = message.updateDate.dateStyleYYYYMMDD()
+            if (!(groupList.filter { $0 == updateDate }.isEmpty) ) {
+                continue
+            }
+            groupList.append(updateDate)
+            result.append(findBy(postDate: updateDate))
+        }
+        
+        return (result, groupList)
+    }
+//    指定投稿日メッセージ全取得
+    static func findBy(postDate: String) -> [MessageDto] {
+        
+        let fromDate = "\(postDate) 00:00:00".toDateStyleMedium(dateFormat: "yyyy-MM-dd HH:mm:ss")
+        let toDate = "\(postDate) 23:59:59".toDateStyleMedium(dateFormat: "yyyy-MM-dd HH:mm:ss")
+        
+        return daoHelper.findAll().filter("updateDate >= %@ AND updateDate <= %@", fromDate, toDate)
+            .sorted(byKeyPath: "updateDate", ascending: true).map { MessageDto(value: $0) }
     }
 }
