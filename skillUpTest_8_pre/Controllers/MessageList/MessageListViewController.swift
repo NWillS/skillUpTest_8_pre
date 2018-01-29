@@ -12,11 +12,21 @@ class MessageListViewController: UIViewController {
     @IBOutlet weak private var messageTableView: UITableView!
     @IBOutlet weak private var messageTextView: UITextView!
     @IBOutlet weak private var sendButton: UIButton!
+    @IBOutlet weak private var bottom: NSLayoutConstraint!
     
     let dataSource = MessageTableViewProvider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(MessageListViewController.keyboardWillShow(_:)),
+                                               name: NSNotification.Name.UIKeyboardWillShow,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(MessageListViewController.keyboardWillHide(_:)),
+                                               name: NSNotification.Name.UIKeyboardWillHide,
+                                               object: nil)
         
         messageTableView.dataSource = dataSource
         messageTableView.rowHeight = UITableViewAutomaticDimension
@@ -32,6 +42,14 @@ class MessageListViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print(messageTextView.isFirstResponder)
+        if messageTextView.isFirstResponder {
+            messageTextView.resignFirstResponder()
+        }
+        self.view.endEditing(true)
+    }
+
     @IBAction func tappedSendButton(_ sender: UIButton) {
         guard let message = messageTextView.text else {
             return
@@ -50,7 +68,7 @@ class MessageListViewController: UIViewController {
     }
     func scrollToNewMessage() {
         
-        DispatchQueue.main.async {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             
             let section = self.messageTableView.numberOfSections
             if section > 0 {
@@ -59,9 +77,26 @@ class MessageListViewController: UIViewController {
                 
                 let indexPath = IndexPath(row: row - 1, section: section - 1)
                 
-                self.messageTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
+                self.messageTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
             }
         }
+    }
+    @objc func keyboardWillShow(_ notification: Notification) {
+        
+        if let userInfo = notification.userInfo {
+            if let keyboard = userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue {
+                let keyBoardRect = keyboard.cgRectValue
+                
+                self.bottom.constant = keyBoardRect.size.height
+                scrollToNewMessage()
+            }
+        }
+        
+    }
+    @objc func keyboardWillHide(_ notification: Notification) {
+        
+        self.bottom.constant = 0
+        scrollToNewMessage()
     }
 }
 

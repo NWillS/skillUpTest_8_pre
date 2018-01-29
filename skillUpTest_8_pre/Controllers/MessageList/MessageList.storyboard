@@ -112,6 +112,7 @@
                         <viewLayoutGuide key="safeArea" id="Tdw-Po-bVm"/>
                     </view>
                     <connections>
+                        <outlet property="bottom" destination="TY0-B0-pId" id="I9e-t3-sEp"/>
                         <outlet property="messageTableView" destination="iDW-Nv-76M" id="aSl-37-pVL"/>
                         <outlet property="messageTextView" destination="Xsn-Dy-ywS" id="bjP-w7-tAD"/>
                         <outlet property="sendButton" destination="fb0-s2-Olf" id="Zrj-TU-fHu"/>

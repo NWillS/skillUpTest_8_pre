@@ -13,6 +13,7 @@
 		BE093C33201AF626002DCE7F /* Date+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C31201AF626002DCE7F /* Date+DateFormat.swift */; };
 		BE093C36201AF809002DCE7F /* MocRealmMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C35201AF809002DCE7F /* MocRealmMessage.swift */; };
 		BE093C39201AF88D002DCE7F /* TaskDaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C38201AF88D002DCE7F /* TaskDaoTests.swift */; };
+		BE2F145B201F449E00356028 /* UITableView+TouchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F145A201F449E00356028 /* UITableView+TouchEvent.swift */; };
 		BE352AB9201841F40058DD1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE352AB8201841F40058DD1E /* AppDelegate.swift */; };
 		BE352AC0201841F40058DD1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE352ABF201841F40058DD1E /* Assets.xcassets */; };
 		BE352AC3201841F40058DD1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE352AC1201841F40058DD1E /* LaunchScreen.storyboard */; };
@@ -45,6 +46,7 @@
 		BE093C31201AF626002DCE7F /* Date+DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+DateFormat.swift"; sourceTree = "<group>"; };
 		BE093C35201AF809002DCE7F /* MocRealmMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocRealmMessage.swift; sourceTree = "<group>"; };
 		BE093C38201AF88D002DCE7F /* TaskDaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDaoTests.swift; sourceTree = "<group>"; };
+		BE2F145A201F449E00356028 /* UITableView+TouchEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+TouchEvent.swift"; sourceTree = "<group>"; };
 		BE352AB5201841F40058DD1E /* skillUpTest_8_pre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skillUpTest_8_pre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE352AB8201841F40058DD1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE352ABF201841F40058DD1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				BE093C30201AF626002DCE7F /* String+DateFormat.swift */,
 				BE093C31201AF626002DCE7F /* Date+DateFormat.swift */,
+				BE2F145A201F449E00356028 /* UITableView+TouchEvent.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			files = (
 				BE84BC33201974DD00D65729 /* MessageListViewController.swift in Sources */,
 				BE352AE3201847FA0058DD1E /* MessageDao.swift in Sources */,
+				BE2F145B201F449E00356028 /* UITableView+TouchEvent.swift in Sources */,
 				BE84BC2E20196E6200D65729 /* MessageTableViewProvider.swift in Sources */,
 				BE093C32201AF626002DCE7F /* String+DateFormat.swift in Sources */,
 				BE352AB9201841F40058DD1E /* AppDelegate.swift in Sources */,
@@ -626,6 +630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68BKV3FXAV;
 				INFOPLIST_FILE = "$(SRCROOT)/skillUpTest_8_pre/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.neec.skillUpTest-8-pre";
@@ -641,6 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68BKV3FXAV;
 				INFOPLIST_FILE = "$(SRCROOT)/skillUpTest_8_pre/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.neec.skillUpTest-8-pre";
