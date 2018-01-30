@@ -1,0 +1,6 @@
+framework module Pods_skillUpTest_8_pre {
+  umbrella header "Pods-skillUpTest_8_pre-umbrella.h"
+
+  export *
+  module * { export * }
+}
