@@ -13,6 +13,7 @@ class MessageListViewController: UIViewController {
     @IBOutlet weak private var messageTextView: UITextView!
     @IBOutlet weak private var sendButton: UIButton!
     @IBOutlet weak private var bottom: NSLayoutConstraint!
+    @IBOutlet weak private var viewHeight: NSLayoutConstraint!
     
     let dataSource = MessageTableViewProvider()
     
@@ -35,6 +36,7 @@ class MessageListViewController: UIViewController {
         messageTextView.delegate = self
 
         reloadTableView()
+        resetInputView()
         // Do any additional setup after loading the view.
     }
 
@@ -43,7 +45,6 @@ class MessageListViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print(messageTextView.isFirstResponder)
         if messageTextView.isFirstResponder {
             messageTextView.resignFirstResponder()
         }
@@ -56,6 +57,7 @@ class MessageListViewController: UIViewController {
         }
         sendButton.isEnabled = false
         MessageDao.addMessage(text: message)
+        resetInputView()
         reloadTableView()
     }
     
@@ -98,10 +100,26 @@ class MessageListViewController: UIViewController {
         self.bottom.constant = 0
         scrollToNewMessage()
     }
+    func resetInputView() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            let size: CGSize = self.messageTextView.sizeThatFits(self.messageTextView.frame.size)
+            self.messageTextView.frame.size.height = size.height
+            self.viewHeight.constant = size.height + 10.0
+        }
+    }
 }
 
 extension MessageListViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         sendButton.isEnabled = !(textView.text.isEmpty)
+        
+        let maxHeight = 100.0  // 入力フィールドの最大サイズ
+//        if textView.frame.size.height.native < maxHeight {
+        let size: CGSize = messageTextView.sizeThatFits(messageTextView.frame.size)
+        if size.height.native < maxHeight {
+            messageTextView.frame.size.height = size.height
+            viewHeight.constant = size.height + 10.0
+        }
+//        }
     }
 }

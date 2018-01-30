@@ -20,17 +20,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIi-Tq-HEF">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="624" width="375" height="43"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb0-s2-Olf">
-                                        <rect key="frame" x="334" y="10" width="31" height="30"/>
+                                        <rect key="frame" x="334" y="8" width="31" height="30"/>
                                         <state key="normal" title="送信"/>
                                         <connections>
                                             <action selector="tappedSendButton:" destination="LLd-K8-9kQ" eventType="touchUpInside" id="gkZ-t5-mcg"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsn-Dy-ywS">
-                                        <rect key="frame" x="10" y="5" width="314" height="40"/>
+                                        <rect key="frame" x="10" y="5" width="314" height="33"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -40,15 +40,15 @@
                                 <constraints>
                                     <constraint firstItem="Xsn-Dy-ywS" firstAttribute="leading" secondItem="VIi-Tq-HEF" secondAttribute="leading" constant="10" id="5TO-NN-DWi"/>
                                     <constraint firstItem="Xsn-Dy-ywS" firstAttribute="top" secondItem="VIi-Tq-HEF" secondAttribute="top" constant="5" id="8aI-Ub-dVG"/>
-                                    <constraint firstAttribute="bottom" secondItem="fb0-s2-Olf" secondAttribute="bottom" constant="10" id="8sB-pb-vHv"/>
+                                    <constraint firstAttribute="bottom" secondItem="fb0-s2-Olf" secondAttribute="bottom" constant="5" id="8sB-pb-vHv"/>
                                     <constraint firstItem="fb0-s2-Olf" firstAttribute="leading" secondItem="Xsn-Dy-ywS" secondAttribute="trailing" constant="10" id="Hha-es-T1E"/>
-                                    <constraint firstAttribute="height" constant="50" id="RAc-e4-Bjj"/>
+                                    <constraint firstAttribute="height" constant="43" id="RAc-e4-Bjj"/>
                                     <constraint firstAttribute="trailing" secondItem="fb0-s2-Olf" secondAttribute="trailing" constant="10" id="WOL-IS-laT"/>
                                     <constraint firstAttribute="bottom" secondItem="Xsn-Dy-ywS" secondAttribute="bottom" constant="5" id="aiV-br-xdc"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iDW-Nv-76M">
-                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="604"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="messageCell" rowHeight="134" id="KBZ-4u-88m" customClass="MessageTableViewCell" customModule="skillUpTest_8_pre" customModuleProvider="target">
@@ -116,6 +116,7 @@
                         <outlet property="messageTableView" destination="iDW-Nv-76M" id="aSl-37-pVL"/>
                         <outlet property="messageTextView" destination="Xsn-Dy-ywS" id="bjP-w7-tAD"/>
                         <outlet property="sendButton" destination="fb0-s2-Olf" id="Zrj-TU-fHu"/>
+                        <outlet property="viewHeight" destination="RAc-e4-Bjj" id="nfF-AH-dTw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="njO-aP-8iA" userLabel="First Responder" sceneMemberID="firstResponder"/>
