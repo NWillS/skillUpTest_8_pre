@@ -17,6 +17,6 @@ class MocRealmMessage: XCTestCase {
     
     // MARK: - テスト用テキスト
     
-    static let dummyTitle = ["0", "1", "2", "3", "4"]
+    static let dummyText = ["0", "1", "2", "3", "4"]
     
 }

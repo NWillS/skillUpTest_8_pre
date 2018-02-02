@@ -12,7 +12,6 @@
 		BE093C32201AF626002DCE7F /* String+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C30201AF626002DCE7F /* String+DateFormat.swift */; };
 		BE093C33201AF626002DCE7F /* Date+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C31201AF626002DCE7F /* Date+DateFormat.swift */; };
 		BE093C36201AF809002DCE7F /* MocRealmMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C35201AF809002DCE7F /* MocRealmMessage.swift */; };
-		BE093C39201AF88D002DCE7F /* TaskDaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE093C38201AF88D002DCE7F /* TaskDaoTests.swift */; };
 		BE2F145B201F449E00356028 /* UITableView+TouchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F145A201F449E00356028 /* UITableView+TouchEvent.swift */; };
 		BE352AB9201841F40058DD1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE352AB8201841F40058DD1E /* AppDelegate.swift */; };
 		BE352AC0201841F40058DD1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE352ABF201841F40058DD1E /* Assets.xcassets */; };
@@ -20,6 +19,8 @@
 		BE352AE02018463A0058DD1E /* MessageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE352ADF2018463A0058DD1E /* MessageDto.swift */; };
 		BE352AE3201847FA0058DD1E /* MessageDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE352AE2201847FA0058DD1E /* MessageDao.swift */; };
 		BE352AE5201849A10058DD1E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BE352AE4201849A10058DD1E /* .swiftlint.yml */; };
+		BE3C78F02021D2CF000A5998 /* MessageDtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C78EF2021D2CF000A5998 /* MessageDtoTests.swift */; };
+		BE4AD0BD2024A50E00DF7246 /* MessageDaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AD0BC2024A50E00DF7246 /* MessageDaoTests.swift */; };
 		BE84BC2C20196DAF00D65729 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE84BC2B20196DAF00D65729 /* MessageTableViewCell.swift */; };
 		BE84BC2E20196E6200D65729 /* MessageTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE84BC2D20196E6200D65729 /* MessageTableViewProvider.swift */; };
 		BE84BC31201974C400D65729 /* MessageList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE84BC30201974C400D65729 /* MessageList.storyboard */; };
@@ -45,7 +46,6 @@
 		BE093C30201AF626002DCE7F /* String+DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DateFormat.swift"; sourceTree = "<group>"; };
 		BE093C31201AF626002DCE7F /* Date+DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+DateFormat.swift"; sourceTree = "<group>"; };
 		BE093C35201AF809002DCE7F /* MocRealmMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocRealmMessage.swift; sourceTree = "<group>"; };
-		BE093C38201AF88D002DCE7F /* TaskDaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDaoTests.swift; sourceTree = "<group>"; };
 		BE2F145A201F449E00356028 /* UITableView+TouchEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+TouchEvent.swift"; sourceTree = "<group>"; };
 		BE352AB5201841F40058DD1E /* skillUpTest_8_pre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skillUpTest_8_pre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE352AB8201841F40058DD1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +57,8 @@
 		BE352ADF2018463A0058DD1E /* MessageDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDto.swift; sourceTree = "<group>"; };
 		BE352AE2201847FA0058DD1E /* MessageDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDao.swift; sourceTree = "<group>"; };
 		BE352AE4201849A10058DD1E /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		BE3C78EF2021D2CF000A5998 /* MessageDtoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDtoTests.swift; sourceTree = "<group>"; };
+		BE4AD0BC2024A50E00DF7246 /* MessageDaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDaoTests.swift; sourceTree = "<group>"; };
 		BE84BC2B20196DAF00D65729 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		BE84BC2D20196E6200D65729 /* MessageTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewProvider.swift; sourceTree = "<group>"; };
 		BE84BC30201974C400D65729 /* MessageList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessageList.storyboard; sourceTree = "<group>"; };
@@ -116,7 +118,8 @@
 		BE093C37201AF85D002DCE7F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BE093C38201AF88D002DCE7F /* TaskDaoTests.swift */,
+				BE3C78EF2021D2CF000A5998 /* MessageDtoTests.swift */,
+				BE4AD0BC2024A50E00DF7246 /* MessageDaoTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -490,7 +493,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE093C36201AF809002DCE7F /* MocRealmMessage.swift in Sources */,
-				BE093C39201AF88D002DCE7F /* TaskDaoTests.swift in Sources */,
+				BE3C78F02021D2CF000A5998 /* MessageDtoTests.swift in Sources */,
+				BE4AD0BD2024A50E00DF7246 /* MessageDaoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
